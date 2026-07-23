@@ -752,6 +752,34 @@ export default function App() {
                 );
               })}
             </div>
+
+            {/* ---------------- CLAIMS VIDEO (handshake) ---------------- */}
+            <Reveal delay={150}>
+              <div className="mt-16 max-w-4xl mx-auto text-center">
+                <h3 className="font-display text-xl sm:text-2xl font-semibold" style={{ color: "#0E3B2E" }}>
+                  Watch: a promise sealed with a handshake
+                </h3>
+                <p className="mt-3 text-sm sm:text-base leading-relaxed" style={{ color: "#5C6E64" }}>
+                  At Malmitch, every policy starts with a conversation and ends with a handshake
+                  — not a ticket number. Here's what that looks like when a claim is settled.
+                </p>
+                <div
+                  className="mt-8 rounded-2xl overflow-hidden border shadow-lg aspect-video bg-black"
+                  style={{ borderColor: "#D6E7DD" }}
+                >
+                  <video
+                    className="w-full h-full"
+                    controls
+                    preload="metadata"
+                    poster="/images/handshake-poster.jpg"
+                  >
+                    <source src="/videos/handshake.mp4" type="video/mp4" />
+                    Your browser doesn't support embedded video. You can{" "}
+                    <a href="/videos/handshake-promise.mp4">download the video</a> instead.
+                  </video>
+                </div>
+              </div>
+            </Reveal>
           </div>
         </section>
 
@@ -1082,7 +1110,7 @@ export default function App() {
 
       {/* ---------------- FOOTER ---------------- */}
       <footer className="px-5 sm:px-8 pt-16 pb-8" style={{ backgroundColor: "#082A20" }}>
-        <div className="max-w-screen-2xl mx-auto px-5 sm:px-8 lg:px-8 mx-auto grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4gap-10">
+        <div className="max-w-screen-2xl mx-auto px-5 sm:px-8 lg:px-8 mx-auto grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-10">
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2.5">
               <LogoMark size={32} onDark />
