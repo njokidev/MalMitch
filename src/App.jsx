@@ -775,7 +775,7 @@ export default function App() {
                   >
                     <source src="/videos/handshake.mp4" type="video/mp4" />
                     Your browser doesn't support embedded video. You can{" "}
-                    <a href="/videos/handshake-promise.mp4">download the video</a> instead.
+                    <a href="/videos/handshake.mp4">download the video</a> instead.
                   </video>
                 </div>
               </div>
